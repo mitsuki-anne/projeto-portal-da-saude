@@ -7,9 +7,13 @@ body{
 nav{
     background-color: #08415c;
     width: 100%;
-    height: 45px;
+    height: 55px;
     position: fixed;
     top: 0;
+    z-index: 10;
+    display: flex;
+    gap: 20px;
+    
 }
 .btnav{
     height: 100%;
@@ -17,7 +21,11 @@ nav{
     border: none;
     color: white;
     position: relative;
-    left: 80%;
+    font-size: 17px;
+    
+}
+#home{
+    margin-left: 1000px;
 }
 .btnav:hover {
     color: #F61067;
@@ -39,7 +47,7 @@ h1{
     position: relative;
     background: none;
     padding: 0%;
-    bottom: 700px;
+    bottom: 600px;
     left: 850px;
     font-size: 50px;
     color: #08415c;
@@ -48,7 +56,7 @@ h2{
     position: relative;
     background: none;
     padding: 0%;
-    bottom: 730px;
+    bottom: 630px;
     left: 850px;
     font-size: 25px;
 }
@@ -56,7 +64,7 @@ h2{
     font-size: 30px;
     margin-left: 20px;
     margin-bottom: 0;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 .info{
     margin-left: 40px;
@@ -64,6 +72,44 @@ h2{
     font-size: 20px;
 }
 .bula li{
+    margin-left: 20px;
+    font-size: 20px;
+}
+.listmed{
+   
+    gap: 20px;
+    position: relative;
+    width: auto;
+    height: auto;
+
+}
+.ulmed{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    overflow-x: scroll;
+    
+}
+.med{
+    height: 30px;
+    width: 150px;
+    background-color: #08415c;
+    color: white;
+    margin-top: 5px;
+    
+}
+.visu{
+    height: 100px;
+}
+.visu p{
+    margin-top: 100px;
+}
+.medimg{
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+}
+.consequencias li{
     margin-left: 20px;
     font-size: 20px;
 }

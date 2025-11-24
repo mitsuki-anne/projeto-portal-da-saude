@@ -1,31 +1,97 @@
 body {
   margin: 0;
   background-color: #dee5e5;
+  padding: 0;
+  height: 100%;
 }
-.qlqrcoisa{
-  background-image: url("../../foto.avif");
-  height: 500px;  object-fit: cover;
-  text-align: right;
+nav {
+  background-color: #08415c;
+  width: 100%;
+  height: 55px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  gap: 120px;
+}
+.menubtn {
+  height: 100%;
+  background: none;
+  border: none;
+  color: white;
+  position: relative;
+  font-size: 17px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.btnav {
+  height: 100%;
+  background: none;
+  border: none;
+  color: white;
+  position: relative;
+  font-size: 17px;
+  left: 115px;
+}
+
+.btnav:hover {
+  color: #00ffdd;
 }
 .inicio {
   display: flex;
   margin-top: 200px;
   justify-content: center;
 }
-.img-principal img{
-  width: 450px;
-  
+.img1 img {
+  width: 600px;
+  height: 450px;
+  position: relative;
+  bottom: 20px;
 }
-.titulo1{
+
+.texto1 h1 {
   margin-left: 100px;
   font-size: 50px;
+  position: relative;
+  top: 60px;
 }
-.sub1 {
+.texto1 h2 {
   margin-left: 103px;
   margin-top: -30px;
-  font-size: 17px;  font-weight: normal;
+  font-size: 17px;
+  font-weight: normal;
+  position: relative;
+  top: 55px;
 }
-.texto1 {
+
+.container {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto2 {
+  width: 550px;
+}
+
+.texto2 > p {
   text-align: center;
-  margin-top: 250px;
+}
+
+.dieta {
+  position: relative;
+  width: 420px;
+  left: 500px;
+  top: 400px;
+  text-align: center;
+}
+.dieta h2 {
+  font-size: 15px;
+  top: 20px;
+}
+.visual {
+  height: 400px;
 }

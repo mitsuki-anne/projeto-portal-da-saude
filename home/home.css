@@ -36,11 +36,14 @@ nav{
     position: relative;
     font-size: 17px;
     left: 115px;
-    
+    cursor: pointer;
+    transition: 0.2s;
 }
 
 .btnav:hover {
     color: #00ffdd;
+    scale: calc(1.1);
+    
 }
 .imagem-inicio{
     width: 100%;
@@ -66,28 +69,28 @@ h1{
 }
 .equipe{
     height: 300px;
-    width: 300px;
+    width: 350px;
     position: relative;
     top: 200px;
     left: 30px;
-    border: black solid 5px;
+    border: #08415c solid 3px;
     border-radius: 10px;
 }
 h2{
     position: relative;
-    left: 370px;
+    left: 420px;
     bottom: 140px;
     font-size: 30px;
 }
 .nos{
     width: 400px;
     position: relative;
-    left: 370px;
+    left: 420px;
     bottom: 140px;
 }
 .conheça{
     position: relative;
-    left: 370px;
+    left: 420px;
     bottom: 60px;
     background-color: #08415c;
     color: white;
@@ -95,4 +98,67 @@ h2{
     height: 70px;
     width: 250px;
     border-radius: 20px;
+    transition: 0.2s;
+}
+.conheça:hover{
+    scale: calc(1.1);
+}
+.carrossel{
+    display: flex;
+    position: relative;
+    left: 20px;
+    height: 750px;
+    width: auto;
+    align-items: center;
+    overflow: hidden;
+    margin: 0;
+}
+ul{
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    list-style: none;
+    gap: 90px;
+}
+li{
+    position: relative;
+    right: 20px;
+   
+    
+}
+li img{
+    height: 750px;
+    width: 1000px;
+    z-index: 1;
+}
+.btnimg{
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 2;
+    opacity: 0.5;
+}
+.btnimg:hover{
+    background-color: #222;
+}
+.ir{
+    position: relative;
+    bottom: 110px;
+    left: 350px;
+    z-index: 3;
+    height: 75px;
+    width: 300px;
+    border-radius: 30px;
+    background-color: #08415c;
+    color: white;
+    font-size: 50px;
+    overflow: hidden;
+    margin: 0;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.ir:hover{
+    scale: calc(1.1);
 }

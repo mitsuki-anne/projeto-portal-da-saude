@@ -9,12 +9,12 @@
 <body>
      <nav>
        
-        <a href=""><button class="btnav" id="home">home</button></a> 
+        <a href="home.html"><button class="btnav" id="home">home</button></a> 
         <a href=""><button class="btnav">alimentação</button></a>
         <a href=""><button class="btnav">exercicio fisico</button></a> 
-        <a href=""><button class="btnav">medicação</button></a>
+        <a href="../medicacao/med.html"><button class="btnav">medicação</button></a>
         <a href=""><button class="btnav">estetica</button></a>
-        <a href=""><button class="btnav">quem somos?</button></a>
+        <a href="../quem somos/qs.html"><button class="btnav">quem somos?</button></a>
     </nav>
     <div class="principal">
         <img src="inicio.jpg" alt="imagem de início" class="imagem-inicio">
@@ -22,7 +22,7 @@
     
     </div>
     <div>
-        <img class="equipe" src="curso.jpg" alt="equipe">
+        <img class="equipe" src="equipe.jpg" alt="equipe">
         <h2>quem somos nos?</h2>
         <p class="nos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora asperiores a voluptatum dolor, qui ipsa. Suscipit vitae officia sunt, saepe enim autem repellat et inventore earum ipsum, consequatur adipisci in.</p>
         <button class="conheça">conheça a equipe</button>
@@ -30,5 +30,30 @@
     <div>
         <button></button>
     </div>
+    <div class="carrossel">
+        <button id="prevbutton" class="btnimg">◀</button>
+        <br>
+        <ul id="imglist">
+           <li>
+            <img src="../medicacao/med2.jpg" alt="">
+            <a href="../medicacao/med.html"><button class="ir">vamos lá</button></a>
+            </li>
+           <li>
+            <img src="inicio.jpg" alt="">
+            <a href=""><button class="ir">vamos lá</button></a>
+            </li>
+           <li>
+            <img src="logo.jpg" alt="">
+            <button class="ir">vamos lá</button>
+            </li>
+           <li>
+            <img src="equipe.jpg" alt="">
+            <button class="ir">vamos lá</button>
+            </li>
+        </ul>
+
+        <button id="nextbutton" class="btnimg">▶</button>
+    </div>
+    <script src="home.js"></script>
 </body>
 </html>

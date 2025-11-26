@@ -71,14 +71,18 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #bcbdbd;
 }
 
 .texto2 {
-  width: 550px;
+  width: 1200px;
+  /* background-color: #9eb8c4; */
 }
 
 .texto2 > p {
   text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .dieta {
@@ -86,12 +90,13 @@ nav {
   width: 420px;
   left: 500px;
   text-align: center;
+  margin-top: 70px;
 }
 
-.dieta h2 {
+/* .dieta h2 {
   font-size: 15px;
   top: 20px;
-}
+} */
 
 .visual {
   height: 400px;

@@ -108,9 +108,8 @@ h2{
     position: relative;
     left: 20px;
     height: 750px;
-    width: auto;
+    width: 1000px;
     align-items: center;
-    overflow: hidden;
     margin: 0;
 }
 ul{
@@ -141,6 +140,21 @@ li img{
     opacity: 0.5;
 }
 .btnimg:hover{
+    background-color: #222;
+}
+.btnimg2{
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 2;
+    opacity: 0.5;
+    position: absolute;
+    left: 1330px;
+}
+.btnimg2:hover{
     background-color: #222;
 }
 .ir{

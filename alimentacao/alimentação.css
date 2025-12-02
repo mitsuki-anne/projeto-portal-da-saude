@@ -1,51 +1,47 @@
 body {
   margin: 0;
   background-color: #dee5e5;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 /* NAVBAR */
-nav{
-    background-color: #08415c;
-    width: 100%;
-    height: 55px;
-    position: fixed;
-    top: 0;
-    z-index: 10;
-    display: flex;
-    gap: 120px;
-    
+nav {
+  background-color: #08415c;
+  width: 100%;
+  height: 55px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  gap: 120px;
 }
-.menubtn{
-    height: 100%;
-    background: none;
-    border: none;
-    color: white;
-    position: relative;
-    font-size: 17px;
-    left: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-
+.menubtn {
+  height: 100%;
+  background: none;
+  border: none;
+  color: white;
+  position: relative;
+  font-size: 17px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.btnav{
-    height: 100%;
-    background: none;
-    border: none;
-    color: white;
-    position: relative;
-    font-size: 17px;
-    left: 115px;
-    cursor: pointer;
-    transition: 0.2s;
+.btnav {
+  height: 100%;
+  background: none;
+  border: none;
+  color: white;
+  position: relative;
+  font-size: 17px;
+  left: 115px;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
 .btnav:hover {
-    color: #00ffdd;
-    scale: calc(1.1);
-    
+  color: #00ffdd;
+  scale: calc(1.1);
 }
 /* SEÇÃO INICIAL */
 .inicio {
@@ -71,6 +67,12 @@ nav{
   font-size: 16px;
   margin-top: 10px;
   max-width: 400px;
+}
+
+#linha {
+  border: solid 4px black;
+  width: 90%;
+  height: 20%;
 }
 
 /* TÍTULO DIETA */

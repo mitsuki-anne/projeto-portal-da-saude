@@ -13,8 +13,22 @@ nav{
     top: 0;
     z-index: 10;
     display: flex;
-    gap: 120px;
+    gap: 25px;
     
+}
+.textologo{
+    border-right: 1px solid white;
+    padding-right: 10px;
+    height: 25px;
+    position: relative;
+    left: 20px;
+}
+nav p{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    bottom: 5px;
+    left: 10px;
 }
 .menubtn{
     height: 100%;
@@ -37,7 +51,7 @@ nav{
     color: white;
     position: relative;
     font-size: 17px;
-    left: 115px;
+    left: 400px;
     cursor: pointer;
     transition: 0.2s;
 }

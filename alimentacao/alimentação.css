@@ -68,6 +68,11 @@ nav p{
   justify-content: center;
   gap: 50px;
   padding: 160px 40px 80px; /* distancia do topo + equilibrio */
+  width: 80%;
+  position: relative;
+  left: 90px;
+  border-bottom:3px solid #08415c ;
+  padding-bottom: 118px ;
 }
 
 .img1 img {

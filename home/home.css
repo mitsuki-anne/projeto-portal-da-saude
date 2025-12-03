@@ -11,8 +11,22 @@ nav{
     top: 0;
     z-index: 10;
     display: flex;
-    gap: 120px;
+    gap: 25px;
     
+}
+.textologo{
+    border-right: 1px solid white;
+    padding-right: 10px;
+    height: 25px;
+    position: relative;
+    left: 20px;
+}
+nav p{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    bottom: 5px;
+    left: 10px;
 }
 .menubtn{
     height: 100%;
@@ -35,16 +49,19 @@ nav{
     color: white;
     position: relative;
     font-size: 17px;
-    left: 115px;
-    
+    left: 400px;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
 .btnav:hover {
     color: #00ffdd;
+    scale: calc(1.1);
+    
 }
 .imagem-inicio{
     width: 100%;
-    height: auto;
+    height: 90%;
     object-fit: cover;
     z-index: 1;
 }
@@ -57,42 +74,161 @@ nav{
 h1{
     z-index: 2;
     position: relative;
-    bottom: 650px;
-    left: 300px;
+    bottom: 600px;
     width: auto;
     text-align: center;
-    font-size: 50px;
+    font-size: 70px;
     color: #08415c;
 }
-.equipe{
-    height: 300px;
-    width: 300px;
+h6{
+    z-index: 2;
     position: relative;
-    top: 200px;
+    bottom: 750px;
+    width: auto;
+    text-align: center;
+    font-size: 60px;
+    color: #08415c;
+}
+.textin{
+    z-index: 2;
+    position: relative;
+    bottom: 850px;
+    width: auto;
+    text-align: center;
+    font-size: 25px;
+    color: #08415c;
+}
+.btni{
+    position: relative;
+    bottom: 800px;
+    left: 42%;
+    background-color: #136083;
+    color: white;
+    border: none;
+    font-size: 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.2s;
+    height: 55px;
+    width: 230px;
+}
+.todos{
+    height: 600px;
+}
+.equipe{
+    height: 500px;
+    
+    position: relative;
+    top: 50px;
     left: 30px;
-    border: black solid 5px;
     border-radius: 10px;
 }
 h2{
     position: relative;
-    left: 370px;
-    bottom: 140px;
-    font-size: 30px;
+    left: 640px;
+    bottom: 500px;
+    font-size: 50px;
 }
 .nos{
-    width: 400px;
+    width: 370px;
     position: relative;
-    left: 370px;
-    bottom: 140px;
+    left: 650px;
+    bottom: 500px;
+    font-size: 18px;
 }
 .conheça{
     position: relative;
-    left: 370px;
-    bottom: 60px;
+    left: 650px;
+    bottom: 350px;
     background-color: #08415c;
     color: white;
-    font-size: 20px;
-    height: 70px;
-    width: 250px;
+    cursor: pointer;
+    font-size: 30px;
+    height: 100px;
+    width: 280px;
     border-radius: 20px;
+    transition: 0.2s;
+    
+}
+.conheça:hover{
+    scale: calc(1.1);
+}
+.carrossel{
+    display: flex;
+    position: relative;
+    left: 20px;
+    height: 700px;
+    width: 1000px;
+    align-items: center;
+    margin: 0;
+}
+ul{
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    list-style: none;
+    gap: 70px;
+}
+li{
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px; 
+    height: 700px;
+}
+li img{
+    height: 680px;
+    width: 930px;
+    z-index: 1;
+}
+.btnimg{
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 2;
+    opacity: 0.5;
+}
+.btnimg:hover{
+    background-color: #222;
+}
+.btnimg2{
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 2;
+    opacity: 0.5;
+    position: absolute;
+    left: 1330px;
+}
+.btnimg2:hover{
+    background-color: #222;
+}
+.ir{
+    position: relative;
+    bottom: 110px;
+    left: 350px;
+    z-index: 3;
+    height: 75px;
+    width: 300px;
+    border-radius: 30px;
+    background-color: #08415c;
+    color: white;
+    font-size: 50px;
+    overflow: hidden;
+    margin: 0;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.ir:hover{
+    scale: calc(1.1);
+}
+.todos{
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1) ;
+    margin-bottom: 100px;
+    margin-top: 100px;
 }

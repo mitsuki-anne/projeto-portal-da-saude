@@ -8,27 +8,52 @@
 </head>
 <body>
      <nav>
-       
-        <a href=""><button class="btnav" id="home">home</button></a> 
-        <a href=""><button class="btnav">alimentação</button></a>
+        <p class="textologo">saude e estetica</p> <p>portal da saúde</p>
+        <a href="home.html"><button class="btnav" id="home">home</button></a> 
+        <a href="../alimentacao/alimentação.html"><button class="btnav">alimentação</button></a>
         <a href=""><button class="btnav">exercicio fisico</button></a> 
-        <a href=""><button class="btnav">medicação</button></a>
-        <a href=""><button class="btnav">estetica</button></a>
-        <a href=""><button class="btnav">quem somos?</button></a>
+        <a href="../medicacao/med.html"><button class="btnav">medicação</button></a>
+        <a href="../estetica/estetica.html"><button class="btnav">estetica</button></a>
+        <a href="../quem somos/qs.html"><button class="btnav">quem somos?</button></a>
     </nav>
     <div class="principal">
-        <img src="inicio.jpg" alt="imagem de início" class="imagem-inicio">
-        <h1>BEM VINDO <br> AO <br> PORTAL DA SAÚDE</h1>
-    
+        <img src="simg.jpg" alt="imagem de início" class="imagem-inicio">
+        <h1>BEM VINDO</h1>
+        <h6>AO PORTAL DA SAÚDE</h6>
+        <p class="textin">Seu guia completo para uma vida mais saudável e equilibrada.</p>
+        <button class="btni">Comece a Explorar</button>
     </div>
-    <div>
-        <img class="equipe" src="curso.jpg" alt="equipe">
+    <div class="todos">
+        <img class="equipe" src="equipe.jpg" alt="equipe">
         <h2>quem somos nos?</h2>
         <p class="nos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora asperiores a voluptatum dolor, qui ipsa. Suscipit vitae officia sunt, saepe enim autem repellat et inventore earum ipsum, consequatur adipisci in.</p>
         <button class="conheça">conheça a equipe</button>
     </div>
-    <div>
-        <button></button>
+
+    <div class="carrossel">
+        <button id="prevbutton" class="btnimg">◀</button>
+        <br>
+        <ul id="imglist">
+           <li>
+            <img src="../medicacao/med2.jpg" alt="">
+            <a href="../medicacao/med.html"><button class="ir">vamos lá</button></a>
+            </li>
+           <li>
+            <img src="simg.jpg" alt="">
+            <a href=""><button class="ir">vamos lá</button></a>
+            </li>
+           <li>
+            <img src="logo.jpg" alt="">
+            <button class="ir">vamos lá</button>
+            </li>
+           <li>
+            <img src="equipe.jpg" alt="">
+            <button class="ir">vamos lá</button>
+            </li>
+        </ul>
+
+        <button id="nextbutton" class="btnimg2">▶</button>
     </div>
+    <script src="home.js"></script>
 </body>
 </html>

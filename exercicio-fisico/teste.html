@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Guia Completo de Exercício Físico</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1434A4 ",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#102216",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+</head>
+
+<body class="font-display bg-background-light dark:bg-background-dark text-[#111813] dark:text-gray-200">
+    <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <div class="flex flex-1 justify-center py-5">
+                <div class="layout-content-container flex flex-col w-full max-w-[960px] flex-1">
+                    <main class="flex flex-col gap-10 md:gap-16 mt-8">
+                        <section>
+                            <div class="@container">
+                                <div class="@[480px]:p-4">
+                                    <div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10"
+                                        data-alt="Pessoas se exercitando em um parque ensolarado"
+                                        style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://cdn.borainvestir.b3.com.br/2023/06/30145447/atividades-fisicas-e-dinheiro.jpeg");'>
+                                        <div class="flex flex-col gap-2 text-left">
+                                            <h1
+                                                class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
+                                                Guia Completo de Exercício Físico</h1>
+                                            <h2
+                                                class="text-white/90 text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal max-w-2xl">
+                                                Descubra o poder do movimento para transformar sua saúde e bem-estar.
+                                                Tudo o que você precisa saber para começar está aqui.</h2>
+                                        </div>
+                                        <button
+                                            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] hover:opacity-90 transition-opacity">
+                                            <span class="truncate">Explorar o Guia</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="tipos">
+                            <h2
+                                class="text-[#111813] dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+                                Tipos de Exercícios</h2>
+                            <div class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-4 p-4">
+                                <div
+                                    class="flex flex-1 gap-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-background-dark p-4 flex-col">
+                                    <div class="text-primary"><span class="material-symbols-outlined"
+                                            style="font-size: 28px;">directions_run</span></div>
+                                    <div class="flex flex-col gap-1">
+                                        <h3 class="text-[#111813] dark:text-white text-base font-bold leading-tight">
+                                            Exercícios Aeróbicos</h3>
+                                        <p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-normal">
+                                            Melhora a saúde cardiovascular e a resistência. Exemplos: corrida, natação,
+                                            ciclismo.</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex flex-1 gap-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-background-dark p-4 flex-col">
+                                    <div class="text-primary"><span class="material-symbols-outlined"
+                                            style="font-size: 28px;">fitness_center</span></div>
+                                    <div class="flex flex-col gap-1">
+                                        <h3 class="text-[#111813] dark:text-white text-base font-bold leading-tight">
+                                            Treinamento de Força</h3>
+                                        <p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-normal">
+                                            Aumenta a massa muscular e fortalece os ossos. Exemplos: musculação,
+                                            agachamentos.</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex flex-1 gap-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-background-dark p-4 flex-col">
+                                    <div class="text-primary"><span class="material-symbols-outlined"
+                                            style="font-size: 28px;">self_improvement</span></div>
+                                    <div class="flex flex-col gap-1">
+                                        <h3 class="text-[#111813] dark:text-white text-base font-bold leading-tight">
+                                            Flexibilidade e Alongamento</h3>
+                                        <p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-normal">
+                                            Aumenta a amplitude de movimento e reduz o risco de lesões. Exemplos: yoga,
+                                            pilates.</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex flex-1 gap-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-background-dark p-4 flex-col">
+                                    <div class="text-primary"><span class="material-symbols-outlined"
+                                            style="font-size: 28px;">balance</span></div>
+                                    <div class="flex flex-col gap-1">
+                                        <h3 class="text-[#111813] dark:text-white text-base font-bold leading-tight">
+                                            Exercícios de Equilíbrio</h3>
+                                        <p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-normal">
+                                            Previne quedas e melhora a coordenação corporal. Exemplos: tai chi, ficar em
+                                            um pé só.</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex flex-1 gap-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-background-dark p-4 flex-col">
+                                    <div class="text-primary"><span class="material-symbols-outlined"
+                                            style="font-size: 28px;">bolt</span></div>
+                                    <div class="flex flex-col gap-1">
+                                        <h3 class="text-[#111813] dark:text-white text-base font-bold leading-tight">
+                                            Treino HIIT</h3>
+                                        <p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-normal">
+                                            HIIT é um treino rápido e intenso, feito em explosões curtas com pausas
+                                            pequenas.
+                                            É ótimo pra queimar calorias, melhorar o fôlego e acelerar o metabolismo em
+                                            pouco tempo.</p>
+                                    </div>
+                                    
+
+
+
+
+                                   
+
+                                    
+
+                                    
+                                        
+
+                        
+                                </div>
+                                
+                            <div
+                                    class="flex flex-1 gap-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-background-dark p-4 flex-col">
+                                    <div class="text-primary"><span class="material-symbols-outlined"
+                                            style="font-size: 28px;">bolt</span></div>
+                                    <div class="flex flex-col gap-1">
+                                        <h3 class="text-[#111813] dark:text-white text-base font-bold leading-tight">
+                                            Treino Funcional</h3>
+                                        <p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-normal">
+                                           Trabalha movimentos do dia a dia, fortalecendo todo o corpo de forma dinâmica. Exemplos: prancha, avanço, movimentos com elástico.</p>
+                                    </div>
+                                    
+
+
+
+
+                                   
+
+                                    
+
+                                    
+                                        
+
+                        
+                                </div>
+
+                                <div
+                                    class="flex flex-1 gap-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-background-dark p-4 flex-col">
+                                    <div class="text-primary"><span class="material-symbols-outlined"
+                                            style="font-size: 28px;">air</span></div>
+                                    <div class="flex flex-col gap-1">
+                                        <h3 class="text-[#111813] dark:text-white text-base font-bold leading-tight">
+                                           Técnicas de Respiração</h3>
+                                        <p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-normal">
+                                           Acalmam o corpo, reduzem estresse e melhoram desempenho nos treinos. Exemplos: respiração diafragmática, box breathing, mindfulness.</p>
+                                    </div>
+                                    
+
+
+
+
+                                   
+
+                                    
+
+                                    
+                                        
+
+                        
+                                </div>
+                               
+                        </section>
+                        <section class="px-4" id="riscos">
+                            <div class="rounded-xl bg-gray-900 dark:bg-black/50 p-8 md:p-12 text-white">
+                                <div class="flex flex-col md:flex-row gap-8 items-center">
+                                    <div class="text-red-500"><span class="material-symbols-outlined"
+                                            style="font-size: 64px;">warning</span></div>
+                                    <div class="flex-1">
+                                        <h3 class="text-xl font-bold leading-tight tracking-[-0.015em]">Alerta
+                                            Sedentarismo: Conheça os Riscos</h3>
+                                        <p class="text-gray-300 mt-2">A falta de atividade física regular é um dos
+                                            principais fatores de risco para diversas doenças crônicas. Ficar parado
+                                            custa caro para a sua saúde.</p>
+                                        <ul class="mt-4 space-y-2 list-disc list-inside text-gray-300">
+                                            <li>Aumento do risco de doenças cardíacas e AVC.</li>
+                                            <li>Maior probabilidade de desenvolver diabetes tipo 2.</li>
+                                            <li>Contribui para o ganho de peso e obesidade.</li>
+                                            <li>Enfraquecimento de músculos e ossos.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="treine-em-casa">
+                            <h2
+                                class="text-[#111813]  dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+                                Opções de Treino para Todos</h2>
+                            <div class="grid md:grid-cols-3 gap-4 p-4">
+                                <div
+                                    class="flex flex-col gap-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-background-dark p-6">
+                                    <div class="flex items-center gap-3">
+                                        <span class="material-symbols-outlined text-primary">home</span>
+                                        <h4 class="text-[#111813] dark:text-white font-bold">Exercícios em Casa</h4>
+                                    </div>
+                                    <p class="text-gray-600 dark:text-gray-400 text-sm">Treine no conforto do seu lar
+                                        com equipamentos mínimos. Ideal para quem tem uma rotina agitada.</p>
+                                </div>
+                                <div
+                                    class="flex flex-col gap-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-background-dark p-6">
+                                    <div class="flex items-center gap-3">
+                                        <span class="material-symbols-outlined text-primary">location_city</span>
+                                        <h4 class="text-[#111813] dark:text-white font-bold">Academia da Cidade</h4>
+                                    </div>
+                                    <p class="text-gray-600 dark:text-gray-400 text-sm">Aproveite os espaços públicos e
+                                        equipamentos gratuitos disponíveis na sua cidade para se manter ativo.</p>
+                                </div>
+                                <div
+                                    class="flex flex-col gap-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-background-dark p-6">
+                                    <div class="flex items-center gap-3">
+                                        <span class="material-symbols-outlined text-primary">sports_gymnastics</span>
+                                        <h4 class="text-[#111813] dark:text-white font-bold">Personal Trainer</h4>
+                                    </div>
+                                    <p class="text-gray-600 dark:text-gray-400 text-sm">Tenha um acompanhamento
+                                        profissional para atingir seus objetivos de forma segura e eficiente.</p>
+                                </div>
+
+                                <div
+                                    class="flex flex-col gap-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-background-dark p-6">
+                                    <div class="flex items-center gap-3">
+                                        <span class="material-symbols-outlined text-primary">pool</span>
+                                        <h4 class="text-[#111813] dark:text-white font-bold">Natação</h4>
+                                    </div>
+                                    <p class="text-gray-600 dark:text-gray-400 text-sm">A natação trabalha o corpo todo
+                                        com pouco impacto, melhora o fôlego, a resistência e a postura, sendo uma
+                                        atividade completa para qualquer idade.
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="flex flex-col gap-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-background-dark p-6">
+                                    <div class="flex items-center gap-3">
+                                        <span class="material-symbols-outlined text-primary">directions_run</span>
+                                        <h4 class="text-[#111813] dark:text-white font-bold">Caminhada ao Ar Livre</h4>
+                                    </div>
+                                    <p class="text-gray-600 dark:text-gray-400 text-sm">Caminhar ao ar livre melhora a
+                                        circulação, aumenta a disposição e reduz o estresse, sendo uma atividade leve e
+                                        perfeita pra manter a saúde sem complicação.</p>
+                                </div>
+
+                                <div
+                                    class="flex flex-col gap-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-background-dark p-6">
+                                    <div class="flex items-center gap-3">
+                                        <span class="material-symbols-outlined text-primary">self_improvement</span>
+                                        <h4 class="text-[#111813] dark:text-white font-bold">Yoga / Pilates</h4>
+                                    </div>
+                                    <p class="text-gray-600 dark:text-gray-400 text-sm">Trabalha força, flexibilidade e
+                                        respiração ao mesmo tempo. Ajuda a reduzir estresse e melhora a postura, sendo
+                                        ótimo pra qualquer nível.</p>
+                                </div>
+
+
+
+
+                            </div>
+                        </section>
+                        <section class="px-4" id="mitos">
+                            <h2
+                                class="text-[#111813] dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3 pt-5">
+                                Mitos Sobre Exercícios</h2>
+                            <div class="space-y-4">
+                                <details
+                                    class="group rounded-lg bg-white dark:bg-background-dark p-4 border border-gray-200 dark:border-gray-700 cursor-pointer">
+                                    <summary
+                                        class="flex items-center justify-between font-bold text-[#111813] dark:text-white">
+                                        "Musculação vai me deixar 'grande' demais?"
+                                        <span
+                                            class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
+                                    </summary>
+                                    <p class="mt-2 text-gray-600 dark:text-gray-400 text-sm">Não! Ganhar um volume
+                                        muscular significativo requer dieta e treino muito específicos e intensos. Para
+                                        a maioria das pessoas, a musculação tonifica os músculos, acelera o metabolismo
+                                        e fortalece o corpo.</p>
+                                </details>
+                                <details
+                                    class="group rounded-lg bg-white dark:bg-background-dark p-4 border border-gray-200 dark:border-gray-700 cursor-pointer">
+                                    <summary
+                                        class="flex items-center justify-between font-bold text-[#111813] dark:text-white">
+                                        "Preciso me exercitar por horas para ter resultado?"
+                                        <span
+                                            class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
+                                    </summary>
+                                    <p class="mt-2 text-gray-600 dark:text-gray-400 text-sm">Mito. A consistência é mais
+                                        importante que a duração. Sessões de 30 minutos, 3 a 5 vezes por semana, já
+                                        trazem enormes benefícios para a saúde. O importante é manter a regularidade.
+                                    </p>
+                                </details>
+                                <details
+                                    class="group rounded-lg bg-white dark:bg-background-dark p-4 border border-gray-200 dark:border-gray-700 cursor-pointer">
+                                    <summary
+                                        class="flex items-center justify-between font-bold text-[#111813] dark:text-white">
+                                        "Fazer abdominais é a melhor forma de perder barriga?"
+                                        <span
+                                            class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
+                                    </summary>
+                                    <p class="mt-2 text-gray-600 dark:text-gray-400 text-sm">Não existe exercício para
+                                        perda de gordura localizada. A perda de gordura ocorre no corpo todo. Abdominais
+                                        fortalecem os músculos da região, mas a combinação de exercícios
+                                        cardiovasculares e uma dieta balanceada é fundamental para reduzir a gordura
+                                        abdominal.</p>
+                                </details>
+                                <details
+                                    class="group rounded-lg bg-white dark:bg-background-dark p-4 border border-gray-200 dark:border-gray-700 cursor-pointer">
+                                    <summary
+                                        class="flex items-center justify-between font-bold text-[#111813] dark:text-white">
+                                        "Pode tomar creatina com refrigerante?"
+                                        <span
+                                            class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
+                                    </summary>
+                                    <p class="mt-2 text-gray-600 dark:text-gray-400 text-sm"> Pode misturar creatina com
+                                        refrigerante, mas não é o ideal.
+                                        A creatina em si não perde o efeito, porém o refrigerante é cheio de açúcar e
+                                        aditivos, o que não combina nada com quem busca saúde e desempenho.
+                                        O melhor é tomar com água, suco natural ou até junto da refeição.</p>
+                                </details> 
+                            </div>
+                        </section>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

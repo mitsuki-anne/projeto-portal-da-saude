@@ -81,7 +81,7 @@ h1{
     background: none;
     padding: 0%;
     font-size: 80px;
-    color: white;
+    color: #08415c;
 }
 h2{
     position: relative;
@@ -89,7 +89,7 @@ h2{
     padding: 0%;
     bottom: 650px;
     font-size: 20px;
-    color: #dee5e5;
+    color: #08415c;
 }
 .topico{
     font-size: 30px;
@@ -102,9 +102,63 @@ h2{
     width: 70vw;
     font-size: 20px;
 }
-.bula li{
-    margin-left: 20px;
+.bula{
+    text-align: center;
+    margin-top: 100px;
+}
+.topbula{
+    font-size: 40px;
+    
+}
+.infobula{
     font-size: 20px;
+    position: relative;
+    bottom: 30px
+}
+.pqinfo{
+    font-size: 15px;
+    position: relative;
+    bottom: 20px;
+}
+.dcard{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.pq{
+    display: flex;
+    gap: 20px;
+    position: relative;
+    left: 7%;
+    flex-wrap: wrap;
+
+}
+.pq li{
+    display: flex;
+    gap: 30px;
+    width: 350px;
+    
+}
+.it:hover .ranimg{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+.ranimg{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    position: relative;
+    left: 20px;
+    top: 15px;
+    transition: 0.2s;
+}
+
+h5{
+    font-size: 20px;
+}
+.remedios{
+    text-align: center;
+
 }
 .listmed{
    
@@ -119,6 +173,7 @@ h2{
     list-style: none;
     gap: 40px;
     overflow-x: scroll;
+    margin-top: 70px;
     
 }
 .med{

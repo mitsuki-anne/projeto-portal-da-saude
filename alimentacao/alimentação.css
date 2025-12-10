@@ -1,65 +1,61 @@
 body {
   margin: 0;
   background-color: #dee5e5;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 /* NAVBAR */
-nav{
-    background-color: #08415c;
-    width: 100%;
-    height: 55px;
-    position: fixed;
-    top: 0;
-    z-index: 10;
-    display: flex;
-    gap: 25px;
-    
+nav {
+  background-color: #08415c;
+  width: 100%;
+  height: 55px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  gap: 25px;
 }
-.textologo{
-    border-right: 1px solid white;
-    padding-right: 10px;
-    height: 25px;
-    position: relative;
-    left: 20px;
+.textologo {
+  border-right: 1px solid white;
+  padding-right: 10px;
+  height: 25px;
+  position: relative;
+  left: 20px;
 }
-nav p{
-    color: white;
-    font-size: 20px;
-    position: relative;
-    bottom: 5px;
-    left: 10px;
+nav p {
+  color: white;
+  font-size: 20px;
+  position: relative;
+  bottom: 5px;
+  left: 10px;
 }
-.menubtn{
-    height: 100%;
-    background: none;
-    border: none;
-    color: white;
-    position: relative;
-    font-size: 17px;
-    left: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-
+.menubtn {
+  height: 100%;
+  background: none;
+  border: none;
+  color: white;
+  position: relative;
+  font-size: 17px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.btnav{
-    height: 100%;
-    background: none;
-    border: none;
-    color: white;
-    position: relative;
-    font-size: 17px;
-    left: 400px;
-    cursor: pointer;
-    transition: 0.2s;
+.btnav {
+  height: 100%;
+  background: none;
+  border: none;
+  color: white;
+  position: relative;
+  font-size: 17px;
+  left: 400px;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
 .btnav:hover {
-    color: #00ffdd;
-    scale: calc(1.1);
-    
+  color: #00ffdd;
+  scale: calc(1.1);
 }
 /* SEÇÃO INICIAL */
 .inicio {
@@ -71,8 +67,8 @@ nav p{
   width: 80%;
   position: relative;
   left: 90px;
-  border-bottom:3px solid #08415c ;
-  padding-bottom: 118px ;
+  /* border-bottom: 3px solid #08415c;
+  padding-bottom: 118px; */
 }
 
 .img1 img {
@@ -95,8 +91,13 @@ nav p{
 /* TÍTULO DIETA */
 .dieta {
   text-align: center;
-  margin: 160px auto 20px;
+  /* margin: 160px auto 20px; */
   font-size: 25px;
+}
+
+.dietas {
+  padding: 10px 0 0 0 ;
+  background-color: #9fd2ea68;
 }
 
 /* CARDS */
@@ -129,6 +130,18 @@ nav p{
 
 /* SEÇÃO HÁBITOS */
 .habitos {
+}
+
+.habitos1 {
+  display: flex;
+  align-items: flex-start;
+  gap: 90px;
+  margin: 40px auto;
+  padding: 20px;
+  padding-left: 7%;
+}
+
+.habitos2 {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -159,4 +172,17 @@ nav p{
 
 .espaco {
   height: 150px;
+}
+
+.btt{
+  text-align: center;
+  margin-top: 100px;
+}
+
+.btt1{
+  height: 50px;
+  width: 200px;
+  border-radius: 30px;
+  font-size: 17px;
+  background-color: rgb(181, 206, 198);
 }

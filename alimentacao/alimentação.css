@@ -1,188 +1,520 @@
+/* CSS Variables */
+:root {
+  --primary-color: #08415c;
+  --primary-light: #9fd2ea68;
+  --accent-color: #00ffdd;
+  --bg-light: #dee5e5;
+  --text-dark: #333;
+  --text-light: #666;
+  --card-shadow: 5px 5px 15px rgb(0 0 0 / 0.15);
+  --transition: 0.3s ease;
+  
+  /* Typography */
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", sans-serif;
+  --fs-h1: 3rem;
+  --fs-h2: 2rem;
+  --fs-h3: 1.5rem;
+  --fs-body: 1.125rem;
+  --fs-small: 1rem;
+  
+  --fw-regular: 400;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-2xl: 4rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  background-color: #dee5e5;
-  font-family: "Times New Roman", Times, serif;
+  padding: 0;
+  background-color: var(--bg-light);
+  font-family: var(--font-family);
+  color: var(--text-dark);
+  line-height: 1.6;
+  font-size: 16px;
 }
 
 /* NAVBAR */
 nav {
-  background-color: #08415c;
+  background-color: var(--primary-color);
   width: 100%;
-  height: 55px;
+  height: 60px;
   position: fixed;
   top: 0;
   z-index: 10;
   display: flex;
-  gap: 25px;
+  align-items: center;
+  gap: var(--spacing-lg);
+  padding: 0 var(--spacing-md);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
 .textologo {
-  border-right: 1px solid white;
-  padding-right: 10px;
-  height: 25px;
-  position: relative;
-  left: 20px;
+  border-right: 2px solid white;
+  padding-right: var(--spacing-md);
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin: 0;
 }
+
 nav p {
   color: white;
-  font-size: 20px;
-  position: relative;
-  bottom: 5px;
-  left: 10px;
+  font-size: var(--fs-body);
+  margin: 0;
+  font-weight: var(--fw-semibold);
 }
+
 .menubtn {
   height: 100%;
   background: none;
   border: none;
   color: white;
-  position: relative;
-  font-size: 17px;
-  left: 20px;
+  font-size: var(--fs-body);
+  cursor: pointer;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
+
 .btnav {
   height: 100%;
   background: none;
   border: none;
   color: white;
-  position: relative;
-  font-size: 17px;
-  left: 400px;
+  font-size: var(--fs-small);
+  padding: 0 var(--spacing-md);
   cursor: pointer;
-  transition: 0.2s;
+  transition: color var(--transition);
+  font-weight: var(--fw-semibold);
 }
 
 .btnav:hover {
-  color: #00ffdd;
-  scale: calc(1.1);
+  color: var(--accent-color);
 }
 /* SEÇÃO INICIAL */
 .inicio {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  justify-content: center;
-  gap: 50px;
-  padding: 160px 40px 80px; /* distancia do topo + equilibrio */
-  width: 80%;
-  position: relative;
-  left: 90px;
-  /* border-bottom: 3px solid #08415c;
-  padding-bottom: 118px; */
+  gap: var(--spacing-2xl);
+  padding: 120px var(--spacing-lg) var(--spacing-2xl);
+  margin-top: 60px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-inline: var(--spacing-lg);
 }
 
 .img1 img {
-  width: 700px;
-  height: 500px;
-  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  object-fit: cover;
 }
 
 .texto1 h1 {
-  font-size: 45px;
-  margin: 0;
+  font-size: var(--fs-h1);
+  margin: 0 0 var(--spacing-md) 0;
+  line-height: 1.2;
+  color: var(--primary-color);
+  font-weight: var(--fw-bold);
 }
 
 .texto1 p {
-  font-size: 18px;
-  margin-top: 10px;
-  max-width: 400px;
+  font-size: var(--fs-body);
+  margin: var(--spacing-md) 0 0 0;
+  color: var(--text-light);
+  line-height: 1.8;
 }
 
-/* TÍTULO DIETA */
+/* SEÇÃO DIETAS */
+.dietas {
+  padding: var(--spacing-2xl) var(--spacing-lg);
+  background: linear-gradient(135deg, var(--primary-light) 0%, rgba(159, 210, 234, 0.4) 100%);
+  
+}
+
 .dieta {
   text-align: center;
-  /* margin: 160px auto 20px; */
-  font-size: 25px;
+  margin-bottom: var(--spacing-2xl);
 }
 
-.dietas {
-  padding: 10px 0 0 0 ;
-  background-color: #9fd2ea68;
+.dieta h1 {
+  font-size: var(--fs-h2);
+  margin: 0;
+  color: var(--primary-color);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.5px;
 }
 
 /* CARDS */
 .cards {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  padding: 20px 0 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--spacing-lg);
+  padding: 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-inline: var(--spacing-lg);
 }
 
 .card1 {
-  width: 240px;
-  padding: 18px;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 5px 5px 15px rgb(0 0 0 / 0.15);
-  transition: 0.3s;
-}
-.card1:hover {
-  transform: scale(1.07);
+  padding: var(--spacing-lg);
+  background: white;
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  transition: all var(--transition);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
 }
 
-/* TÍTULO HÁBITOS */
-.titulo1 {
-  text-align: center;
-  margin-top: 70px;
-  margin-bottom: 20px;
-  font-size: 50px;
+.card1:hover {
+  transform: translateY(-8px);
+  box-shadow: 5px 15px 25px rgb(0 0 0 / 0.2);
+}
+
+.card1 img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card1 h1 {
+  font-size: var(--fs-h3);
+  margin: 0;
+  color: var(--primary-color);
+  font-weight: var(--fw-bold);
+}
+
+.card1 p {
+  font-size: var(--fs-small);
+  margin: 0;
+  color: var(--text-light);
+  line-height: 1.6;
 }
 
 /* SEÇÃO HÁBITOS */
 .habitos {
+  padding: var(--spacing-2xl) var(--spacing-lg);
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-inline: var(--spacing-lg);
+}
+
+.titulo1 {
+  text-align: center;
+  margin: 0 0 var(--spacing-2xl) 0;
+  font-size: var(--fs-h2);
+  color: var(--primary-color);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.5px;
 }
 
 .habitos1 {
-  display: flex;
-  align-items: flex-start;
-  gap: 90px;
-  margin: 40px auto;
-  padding: 20px;
-  padding-left: 7%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* centraliza verticalmente imagem ao lado do texto */
+  align-items: center;
+  gap: var(--spacing-2xl);
+  margin: var(--spacing-2xl) auto;
+  padding: var(--spacing-lg);
+
 }
 
 .habitos2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* centraliza verticalmente imagem ao lado do texto */
+  align-items: center;
+  gap: var(--spacing-2xl);
+  margin: var(--spacing-2xl) auto;
+  padding: var(--spacing-lg);
+}
+
+.texto2,
+.texto3,
+.texto4 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.texto2 h1,
+.texto3 h1,
+.texto4 h1 {
+  font-size: var(--fs-h3);
+  margin: 0;
+  color: var(--primary-color);
+  font-weight: var(--fw-bold);
+  line-height: 1.3;
+}
+
+.texto2 p,
+.texto3 p,
+.texto4 p {
+  font-size: var(--fs-body);
+  margin: 0;
+  color: var(--text-light);
+  text-align: justify;
+  line-height: 1.8;
+}
+
+.texto2 strong,
+.texto3 strong,
+.texto4 strong {
+  color: var(--primary-color);
+  font-weight: var(--fw-bold);
+}
+
+.imghabitos {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  gap: 50px;
-  margin: 40px auto;
-  padding: 20px;
-}
-
-.texto2 {
-  width: 600px;
-  text-align: justify;
-}
-
-.texto3 {
-  width: 600px;
-  text-align: justify;
-}
-
-.texto4 {
-  width: 600px;
-  text-align: justify;
+  align-items: center; /* garante que a imagem fique verticalmente centrada */
 }
 
 .img2 {
-  width: 500px;
-  border-radius: 10px;
+  width: 100%;
+  max-width: 460px; /* limita tamanho para não dominar o texto */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  object-fit: cover;
+}
+
+/* Garantir que a coluna de texto ocupe o espaço disponível e alinhe corretamente */
+.texto2, .texto3, .texto4 {
+  align-self: stretch;
+}
+
+/* BOTÃO */
+.btt {
+  text-align: center;
+  margin: var(--spacing-2xl) 0;
+  padding: var(--spacing-lg);
+}
+
+.btt1 {
+  height: 50px;
+  padding: 0 var(--spacing-xl);
+  border-radius: 30px;
+  font-size: var(--fs-body);
+  background-color: #b5cec6;
+  border: none;
+  cursor: pointer;
+  font-weight: var(--fw-semibold);
+  transition: all var(--transition);
+  color: white;
+}
+
+.btt1:hover {
+  background-color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btt1:active {
+  transform: translateY(0);
 }
 
 .espaco {
-  height: 150px;
+  height: var(--spacing-2xl);
 }
 
-.btt{
-  text-align: center;
-  margin-top: 100px;
+/* RESPONSIVIDADE */
+
+/* Tablet (768px - 1024px) */
+@media (max-width: 1024px) {
+  :root {
+    --fs-h1: 2.5rem;
+    --fs-h2: 1.75rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+  }
+
+  .inicio {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    padding: 80px var(--spacing-md) var(--spacing-lg);
+  }
+
+  .img1 img {
+    max-width: 100%;
+  }
+
+  .habitos1,
+  .habitos2 {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-md);
+  }
+
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-md);
+  }
 }
 
-.btt1{
-  height: 50px;
-  width: 200px;
-  border-radius: 30px;
-  font-size: 17px;
-  background-color: rgb(181, 206, 198);
+/* Mobile (até 768px) */
+@media (max-width: 768px) {
+  :root {
+    --fs-h1: 2rem;
+    --fs-h2: 1.5rem;
+    --fs-h3: 1.1rem;
+    --fs-body: 0.95rem;
+    --spacing-lg: 1.5rem;
+    --spacing-2xl: 2rem;
+  }
+
+  nav {
+    height: auto;
+    flex-wrap: wrap;
+    padding: var(--spacing-sm);
+    gap: var(--spacing-sm);
+  }
+
+  .textologo {
+    border-right: none;
+    border-bottom: 2px solid white;
+    padding-right: 0;
+    padding-bottom: var(--spacing-sm);
+    width: 100%;
+  }
+
+  nav p {
+    display: none;
+  }
+
+  .btnav {
+    padding: 0 var(--spacing-sm);
+    font-size: 0.9rem;
+    flex: 1;
+    min-width: 80px;
+  }
+
+  .inicio {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+    padding: 80px var(--spacing-md) var(--spacing-lg);
+    margin-top: 0;
+  }
+
+  .texto1 h1 {
+    font-size: var(--fs-h1);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .texto1 p {
+    font-size: var(--fs-small);
+  }
+
+  .dietas {
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .card1 {
+    padding: var(--spacing-md);
+    gap: var(--spacing-sm);
+  }
+
+  .habitos1,
+  .habitos2 {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md) 0;
+    margin: var(--spacing-lg) 0;
+  }
+
+  .texto2,
+  .texto3,
+  .texto4 {
+    gap: var(--spacing-sm);
+  }
+
+  .texto2 h1,
+  .texto3 h1,
+  .texto4 h1 {
+    font-size: var(--fs-h3);
+  }
+
+  .texto2 p,
+  .texto3 p,
+  .texto4 p {
+    font-size: var(--fs-small);
+    text-align: left;
+  }
+
+  .img2 {
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  .titulo1 {
+    margin-bottom: var(--spacing-lg);
+    font-size: var(--fs-h2);
+  }
+
+  .btt1 {
+    width: 100%;
+    max-width: 300px;
+    font-size: var(--fs-small);
+  }
+}
+
+/* Mobile Pequeno (até 480px) */
+@media (max-width: 480px) {
+  :root {
+    --fs-h1: 1.5rem;
+    --fs-h2: 1.25rem;
+    --fs-h3: 1rem;
+    --fs-body: 0.9rem;
+    --spacing-lg: 1rem;
+    --spacing-2xl: 1.5rem;
+  }
+
+  .inicio {
+    padding: 70px var(--spacing-sm) var(--spacing-md);
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    gap: var(--spacing-xs);
+  }
+
+  .btnav {
+    padding: 0 var(--spacing-xs);
+    font-size: 0.8rem;
+    min-width: 60px;
+  }
+
+  .btt1 {
+    padding: 0 var(--spacing-md);
+  }
 }

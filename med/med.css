@@ -13,14 +13,18 @@ nav{
     z-index: 10;
     display: flex;
     gap: 25px;
-    
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.textologo{
-    border-right: 1px solid white;
-    padding-right: 15px;
-    height: 25px;
-    position: relative;
-    left: 20px;
+
+.container-nav-textos {
+    display: flex;
+    gap: 5px;
+}
+.container-nav2 {
+    gap: 10px;
 }
 nav p{
     color: white;
@@ -39,22 +43,18 @@ nav p{
     left: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; 
     
 
 }
 .btnav{
-    height: 100%;
     background: none;
     border: none;
     color: white;
-    position: relative;
     font-size: 12px;
-    left: 410px;
-    cursor: pointer;
-    transition: 0.2s;
+    cursor: pointer;   
+    transition: 0.2s; 
 }
-
 .btnav:hover {
     color: #00ffdd;
     scale: calc(1.1);
@@ -152,7 +152,6 @@ h2{
     top: 15px;
     transition: 0.2s;
 }
-
 h5{
     font-size: 20px;
 }
@@ -184,6 +183,42 @@ h5{
     margin-top: 5px;
     
 }
+.topcards{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.listcards{
+    display: flex;
+    gap: 20px;
+    position: relative;
+    left: 7%;
+    flex-wrap: wrap;
+}
+.licard{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+.lito{
+    height: 30px;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.25);
+}
+.texttop{
+    position: relative;
+    bottom: 30px;
+}
+.liin{
+    height: 0px;
+    border: 1px solid gray;
+    opacity: 0;
+}
+.licard:hover .liin{
+    height: 300px;
+    opacity: 1;
+    transition: 1s;
+}
+
 .visu{
     height: 100px;
 }
@@ -201,4 +236,31 @@ h5{
 }
 .denuncia{
     height: 250px;
+}
+a{
+    text-decoration: none;
+    color: unset;
+}
+footer{
+    background-color: #08415c;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+.direitos{
+    font-size: 20px;
+}
+.redes{
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+}
+.redes a:hover{
+    color: #00ffdd;
+    transition: 0.4s;
+}
+.social{
+    cursor: pointer;
 }

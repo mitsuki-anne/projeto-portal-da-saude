@@ -8,25 +8,35 @@
 </head>
 <body>
      <nav>
-         <p class="textologo">saude e estetica</p> <p>portal da saúde</p>
-        <a href="home.html"><button class="btnav" id="home">HOME</button></a> 
-        <a href="../alimentacao/alimentação.html"><button class="btnav">ALIMENTAÇÃO</button></a>
-        <a href="../exercicio-fisico/teste.html"><button class="btnav">EXERCICIO FISICO</button></a> 
-        <a href="../medicacao/med.html"><button class="btnav">MEDICAÇÃO</button></a>
-        <a href="../estetica/estetica.html"><button class="btnav">ESTETICA</button></a>
-        <a href="../quem somos/qs.html"><button class="btnav">QUEM SOMOS?</button></a>
+        <div class="container-nav-textos">
+            <p class="textologo">saude e estetica |</p> <p>portal da saúde</p> 
+        </div>
+        <div class="container-nav2">
+            <a href="../home/home.html"><button class="btnav">HOME</button></a> 
+            <a href="../alimentacao/alimentação.html"><button class="btnav">ALIMENTAÇÃO</button></a>
+            <a href="../exercicio-fisico/teste.html"><button class="btnav">EXERCICIO FISICO</button></a> 
+            <a href="../medicacao/med.html"><button class="btnav">MEDICAÇÃO</button></a>
+            <a href="../estetica/estetica.html"><button class="btnav">ESTETICA</button></a>
+            <a href="../quem somos/qs.html"><button class="btnav">QUEM SOMOS?</button></a>
+        </div>
+        
     </nav>
     <div class="principal">
-        <img src="simg.jpg" alt="imagem de início" class="imagem-inicio">
-        <h1>BEM VINDO</h1>
-        <h6>AO PORTAL DA SAÚDE</h6>
-        <p class="textin">Seu guia completo para uma vida mais saudável e equilibrada.</p>
-        <button class="btni"  onclick="scrollParaElemento()">Comece a Explorar</button>
+        <div class="textos">
+            <h1>BEM VINDO <br> AO <br> PORTAL DA SAÚDE</h1>
+            <p class="textin">Seu guia completo para uma vida mais saudável e equilibrada.</p>
+        </div>
+        <div class="btnpri">
+            <button class="btni"  onclick="scrollParaElemento()">Comece a Explorar</button>
+        </div>
     </div>
     <div class="catalogo" id="seção">
-        <h4>Explore Nossos Pilares de Saúde</h4>
+        <div>
+            <h4>Explore Nossos Pilares de Saúde</h4>
         <p class="text2">Descubra dicas e informações essenciais para cuidar do seu bem-estar em todas as áreas <br>da sua vida.</p>
-        <ul>
+        </div>
+        <div class="ulcards">
+            <ul>
             <a href="../alimentacao/alimentação.html">
                 <li class="cards">
                 <img class="imgcat" src="simg.jpg" alt="">
@@ -58,22 +68,25 @@
 
         </ul>
     </div>
+    </div>
     <div class="todos">
-        <img class="equipe" src="equipe.jpg" alt="equipe">
+        <div class="todosimg">
+            <img class="equipe" src="equipe.jpg" alt="equipe">
+        </div>
         <div class="todoscontainer">
             <h2>quem somos nos?</h2>
             <p class="nos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora asperiores a voluptatum dolor, qui ipsa. Suscipit vitae officia sunt, saepe enim autem repellat et inventore earum ipsum, consequatur adipisci in.</p>
-            <button class="conheça">conheça a equipe</button>
+            <a href="../quem somos/qs.html"><button class="conheça">conheça a equipe</button></a>
         </div>
     </div>
     <footer>
         <div class="direitos">
-            <p>© 2024 Portal da Saúde. Todos os direitos reservados.</p>
+            <p>© 2025 Portal da Saúde. Todos os direitos reservados.</p>
         </div>
         <div class="redes">
-            <p>facebook</p>
-            <p>insta</p>
-            <p>twitter</p>
+            <a href=""><p class="social">facebook</p></a>
+            <a href=""><p class="social">insta</p></a>
+            <a href=""><p class="social">twitter</p></a>
         </div>
     </footer>
     <script src="home.js"></script>

@@ -65,22 +65,23 @@ nav p{
     scale: calc(1.1);
     
 }
+.inicio{
+    text-align: center;
+}
 .inicio h1{
-    position: relative;
-    top: 60px;
-    left: 550px;
     color: #08415c;
-    font-size: 40px;
+    font-size: 50px;
+    position: relative;
+    top: 90px;
 }
 .topico{
     margin-bottom: 50px;
 }
 .inicio p{
-    position: absolute;
-    top: 125px;
-    left: 520px;
     color: #08415c;
     font-size: 20px;
+    position: relative;
+    top: 80px;
 }
 .titulo{
     position: relative;
@@ -162,11 +163,13 @@ nav p{
     
 }
 .descri2 {
-    position: relative;
-    bottom: 80px;
-    width: 250px;
-    left: 5px;
     color: #17698f;
+    text-align: center;
+    position: relative;
+    bottom: 88px;
+    right: 65%;
+    width: 230px;
+    height: 50px;
 }
 .outros{
     position: relative;
@@ -201,16 +204,23 @@ nav p{
     right: 5px;
 }
 .outros p{
-    font-size: 18px;
+    font-size: 20px;
     position: relative;
     bottom: 25px;
     color: #08415c;
 }
-.outros h2{
+.prof{
     font-size: 30px;
     position: absolute;
     bottom: 40px;
-    right: 170px;
+    right: 59%;
+    color: #08415c;
+}
+.moni {
+    font-size: 30px;
+    position: absolute;
+    bottom: 40px;
+    right: 65%;
     color: #08415c;
 }
 .ul2{

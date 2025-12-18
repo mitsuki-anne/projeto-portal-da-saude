@@ -4,6 +4,13 @@ body{
     background-color: #dee5e5;
     overflow-x: hidden;
 }
+/* layout container to align all sections to the same left margin */
+.container{
+    max-width: 1100px;
+    margin: 0 auto; /* center page content */
+    padding: 0 20px; /* consistent left/right padding */
+    box-sizing: border-box;
+}
 nav{
     background-color: #08415c;
     width: 100%;
@@ -75,50 +82,41 @@ nav p{
     padding: 0%;
     margin: 0%;
 }
-h1{
-    position: relative;
-    bottom: 80%;
-    background: none;
-    padding: 0%;
-    font-size: 80px;
+.principal .container h1{
+    margin: 0;
+    padding: 30px 0 10px 0;
+    font-size: 48px;
     color: white;
+    line-height: 1.05;
 }
-h2{
-    position: relative;
-    background: none;
-    padding: 0%;
-    bottom: 650px;
-    font-size: 20px;
-    color: white;
+.lead{
+    margin: 0 0 30px 0;
+    color: rgba(255,255,255,0.95);
+    font-size: 18px;
 }
 .topico{
-    font-size: 30px;
-    margin-left: 20px;
-    margin-bottom: 0;
-    margin-top: 50px;
+    font-size: 28px;
+    margin: 50px 0 10px 0;
 }
 .info{
-    margin-left: 40px;
-    width: 70vw;
-    font-size: 20px;
+    margin: 0 0 30px 0;
+    font-size: 18px;
 }
 .bula{
     text-align: center;
-    margin-top: 100px;
+    margin-top: 40px;
 }
 .topbula{
-    font-size: 40px;
-    
+    font-size: 36px;
+    margin: 30px 0 10px 0;
 }
 .infobula{
-    font-size: 20px;
-    position: relative;
-    bottom: 30px
+    font-size: 18px;
+    margin: 0 0 30px 0;
 }
 .pqinfo{
     font-size: 15px;
-    position: relative;
-    bottom: 20px;
+    margin: 6px 0 12px 0;
 }
 .dcard{
     display: flex;
@@ -128,16 +126,13 @@ h2{
 .pq{
     display: flex;
     gap: 20px;
-    position: relative;
-    left: 7%;
     flex-wrap: wrap;
-
+    justify-content: flex-start;
 }
 .pq li{
     display: flex;
     gap: 30px;
     width: 350px;
-    
 }
 .it:hover .ranimg{
     transform: scale(1.1);
@@ -147,9 +142,6 @@ h2{
     height: 50px;
     width: 50px;
     border-radius: 100%;
-    position: relative;
-    left: 20px;
-    top: 15px;
     transition: 0.2s;
 }
 h5{
@@ -172,7 +164,7 @@ h5{
     list-style: none;
     gap: 40px;
     overflow-x: scroll;
-    margin-top: 70px;
+    margin-top: 30px;
     
 }
 .med{
@@ -191,8 +183,6 @@ h5{
 .listcards{
     display: flex;
     gap: 20px;
-    position: relative;
-    left: 7%;
     flex-wrap: wrap;
 }
 .licard{

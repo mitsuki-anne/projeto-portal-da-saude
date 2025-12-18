@@ -45,10 +45,50 @@
             scroll-behavior: smooth;
         }
     </style>
+    <style>
+        /* navbar styles from home.css for visual parity */
+        nav{
+            background-color: #08415c;
+            width: 100%;
+            height: 55px;
+            position: fixed;
+            top: 0;
+            z-index: 10;
+            display: flex;
+            gap: 25px;
+            overflow: hidden;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 18px;
+        }
+        .container-nav-textos { display:flex; gap:5px; align-items:center }
+        .container-nav2 { display:flex; gap:10px; align-items:center }
+        nav p{ color:white; font-size:20px; margin:0; position:relative; bottom:5px; left:10px }
+        .menubtn{ height:100%; background:none; border:none; color:white; font-size:17px; left:20px }
+        .btnav{ background:none; border:none; color:white; font-size:12px; cursor:pointer; transition:0.2s; padding:6px 10px; border-radius:8px }
+        .btnav:hover{ color:#00ffdd; transform:scale(1.08) }
+        /* avoid content hidden behind fixed nav */
+        body{ padding-top:64px }
+    </style>
 </head>
 
 
 <body class="font-display bg-background-light dark:bg-background-dark text-[#111813] dark:text-gray-200">
+    <nav>
+        <div class="container-nav-textos">
+            <p class="textologo">saude e estetica |</p> <p>portal da saúde</p> 
+        </div>
+        <div class="container-nav2">
+            <a href="../home/home.html"><button class="btnav">HOME</button></a> 
+            <a href="../alimentacao/alimentação.html"><button class="btnav">ALIMENTAÇÃO</button></a>
+            <a href="../exercicio-fisico/index.html"><button class="btnav">EXERCICIO FISICO</button></a> 
+            <a href="../med/med.html"><button class="btnav">MEDICAÇÃO</button></a>
+            <a href="../estetica/teste.html"><button class="btnav">ESTETICA</button></a>
+            <a href="../sobre nos/qs.html"><button class="btnav">QUEM SOMOS?</button></a>
+        </div>
+        
+    </nav>
+    
     <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
         <div class="layout-container flex h-full grow flex-col">
             <div class="flex flex-1 justify-center py-5">
